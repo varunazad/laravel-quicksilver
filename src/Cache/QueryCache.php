@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\Cache;
+namespace Varunazad\Quicksilver\Cache;
 
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Database\Query\Builder;
@@ -10,7 +10,7 @@ class QueryCache
 {
     public function __construct(protected Repository $cache) {
 
-        
+
     }
 
     public function remember(Builder $query, ?int $ttl = null, array $tags = [])

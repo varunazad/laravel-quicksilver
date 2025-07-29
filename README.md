@@ -19,4 +19,4 @@
 ## Installation
 
 ```bash
-composer require varun/laravel-quicksilver
+composer require varunazad/laravel-quicksilver

@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\IndexAdvisor;
+namespace Varunazad\Quicksilver\IndexAdvisor;
 
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Query\Builder;

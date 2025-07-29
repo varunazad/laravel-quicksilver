@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\Cache;
+namespace Varunazad\Quicksilver\Cache;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder;

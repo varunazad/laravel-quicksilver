@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\IndexAdvisor;
+namespace Varunazad\Quicksilver\IndexAdvisor;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;

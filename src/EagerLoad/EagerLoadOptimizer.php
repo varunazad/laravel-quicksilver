@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\EagerLoad;
+namespace Varunazad\Quicksilver\EagerLoad;
 
 use Illuminate\Database\Eloquent\Builder;
 

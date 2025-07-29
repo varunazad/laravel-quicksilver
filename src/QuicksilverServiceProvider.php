@@ -1,14 +1,14 @@
 <?php
 
-namespace Varun\Quicksilver;
+namespace Varunazad\Quicksilver;
 
 use Illuminate\Support\ServiceProvider;
-use Varun\Quicksilver\Cache\QueryCache;
-use Varun\Quicksilver\Chunk\ChunkOptimizer;
-use Varun\Quicksilver\EagerLoad\EagerLoadOptimizer;
-use Varun\Quicksilver\Explain\QueryExplainer;
-use Varun\Quicksilver\IndexAdvisor\IndexAdvisor;
-use Varun\Quicksilver\Memory\MemoryProfiler;
+use Varunazad\Quicksilver\Cache\QueryCache;
+use Varunazad\Quicksilver\Chunk\ChunkOptimizer;
+use Varunazad\Quicksilver\EagerLoad\EagerLoadOptimizer;
+use Varunazad\Quicksilver\Explain\QueryExplainer;
+use Varunazad\Quicksilver\IndexAdvisor\IndexAdvisor;
+use Varunazad\Quicksilver\Memory\MemoryProfiler;
 
 class QuicksilverServiceProvider extends ServiceProvider
 {
@@ -41,7 +41,7 @@ class QuicksilverServiceProvider extends ServiceProvider
 
     protected function registerMacros()
     {
-        \Illuminate\Database\Query\Builder::mixin(new \Varun\Quicksilver\Cache\QueryCacheMacro);
-        \Illuminate\Database\Eloquent\Builder::mixin(new \Varun\Quicksilver\Cache\QueryCacheMacro);
+        \Illuminate\Database\Query\Builder::mixin(new \Varunazad\Quicksilver\Cache\QueryCacheMacro);
+        \Illuminate\Database\Eloquent\Builder::mixin(new \Varunazad\Quicksilver\Cache\QueryCacheMacro);
     }
 }

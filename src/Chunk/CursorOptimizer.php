@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\Chunk;
+namespace Varunazad\Quicksilver\Chunk;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\LazyCollection;

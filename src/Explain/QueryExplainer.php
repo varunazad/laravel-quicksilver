@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\Explain;
+namespace Varunazad\Quicksilver\Explain;
 
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Query\Builder;

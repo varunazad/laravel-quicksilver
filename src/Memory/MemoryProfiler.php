@@ -1,6 +1,6 @@
 <?php
 
-namespace Varun\Quicksilver\Memory;
+namespace Varunazad\Quicksilver\Memory;
 
 use Illuminate\Support\Facades\Log;
 

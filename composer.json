@@ -1,5 +1,5 @@
 {
-    "name": "varun/laravel-quicksilver",
+    "name": "varunazad/laravel-quicksilver",
     "description": "Blazing-fast query optimization and memory management for Laravel",
     "type": "library",
     "version": "1.0.0",  
@@ -17,21 +17,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Varun\\Quicksilver\\": "src/"
+            "Varunazad\\Quicksilver\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Varun\\Quicksilver\\Tests\\": "tests/"
+            "Varunazad\\Quicksilver\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Varun\\Quicksilver\\QuicksilverServiceProvider"
+                "Varunazad\\Quicksilver\\QuicksilverServiceProvider"
             ],
             "aliases": {
-                "Quicksilver": "Varun\\Quicksilver\\Facades\\Quicksilver"
+                "Quicksilver": "Varunazad\\Quicksilver\\Facades\\Quicksilver"
             }
         }
     },
