@@ -14,7 +14,7 @@
 - **Memory-safe chunking** for large datasets
 - **Eager loading optimization** with N+1 detection
 - **Query explanation** and index recommendations
-- **Memory profiling** to prevent leaks
+- **Memory profiling** to prevent leaks advance
 
 
 ## Installation
