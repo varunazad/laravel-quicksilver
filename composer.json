@@ -2,6 +2,7 @@
     "name": "varun/laravel-quicksilver",
     "description": "Blazing-fast query optimization and memory management for Laravel",
     "type": "library",
+    "version": "1.0.0",  
     "license": "MIT",
     "keywords": ["laravel", "query", "optimization", "performance", "memory"],
     "require": {
