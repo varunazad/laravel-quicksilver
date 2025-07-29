@@ -1,0 +1,48 @@
+# ========================
+# Development Environments
+# ========================
+/.idea/
+/.vscode/
+/.env
+/.env.*
+!.env.example
+
+# =============
+# Dependency
+# =============
+/vendor/
+/node_modules/
+/composer.lock
+
+# ==================
+# System & Runtime
+# ==================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+*.cache
+*.temp
+
+# ===================
+# Testing & Coverage
+# ===================
+/.phpunit.cache
+/phpunit.xml
+/clover.xml
+/coverage/
+
+# =====================
+# Laravel Testbench App
+# =====================
+/testbench-app/
+/storage/
+/bootstrap/cache/
+
+# ==================
+# Build & Output
+# ==================
+/build/
+/dist/
+/docs/_build/
