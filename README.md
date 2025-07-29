@@ -16,6 +16,7 @@
 - **Query explanation** and index recommendations
 - **Memory profiling** to prevent leaks
 
+
 ## Installation
 
 ```bash
