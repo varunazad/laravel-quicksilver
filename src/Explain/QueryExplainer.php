@@ -8,7 +8,10 @@ use Illuminate\Support\Facades\Log;
 
 class QueryExplainer
 {
-    public function __construct(protected ConnectionInterface $connection) {}
+    protected $connection;
+    public function __construct(ConnectionInterface $connection) {
+        $this->connection = $connection;
+    }
 
     public function analyze(Builder $query): array
     {

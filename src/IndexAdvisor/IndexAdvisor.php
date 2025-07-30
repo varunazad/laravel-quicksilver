@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Log;
 
 class IndexAdvisor
 {
-    public function __construct(protected ConnectionInterface $connection) {}
+    protected $connection;
+    public function __construct(ConnectionInterface $connection) {}
 
     public function recommend(Builder $query): array
     {

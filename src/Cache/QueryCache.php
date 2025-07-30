@@ -8,9 +8,10 @@ use Illuminate\Support\Facades\Cache;
 
 class QueryCache
 {
-    public function __construct(protected Repository $cache) {
+    protected Repository $cache;
 
-
+    public function __construct(Repository $cache) {
+        $this->cache = $cache;
     }
 
     public function remember(Builder $query, ?int $ttl = null, array $tags = [])
