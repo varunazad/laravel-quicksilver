@@ -17,7 +17,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Varunazad\\Quicksilver\\": "src/"
+            "Varunazad\\Quicksilver\\": "src/",
+             "Varunazad\\Quicksilver\\Facades\\": "src/Facades/"
         }
     },
     "autoload-dev": {
