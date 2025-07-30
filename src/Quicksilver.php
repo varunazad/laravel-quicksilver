@@ -11,18 +11,30 @@ use Varunazad\Quicksilver\Memory\MemoryProfiler;
 
 class Quicksilver
 {
+    protected $queryCache;
+    protected $chunkOptimizer;
+    protected $eagerLoadOptimizer;
+    protected $queryExplainer;
+    protected $indexAdvisor;
+    protected $memoryProfiler;
     public function __construct(
-        protected QueryCache $queryCache,
-        protected ChunkOptimizer $chunkOptimizer,
-        protected EagerLoadOptimizer $eagerLoadOptimizer,
-        protected QueryExplainer $queryExplainer,
-        protected IndexAdvisor $indexAdvisor,
-        protected MemoryProfiler $memoryProfiler
+        QueryCache $queryCache,
+        ChunkOptimizer $chunkOptimizer,
+        EagerLoadOptimizer $eagerLoadOptimizer,
+        QueryExplainer $queryExplainer,
+        IndexAdvisor $indexAdvisor,
+        MemoryProfiler $memoryProfiler
     ) {}
 
     public function cache(): QueryCache
     {
         return $this->queryCache;
+    }
+
+    
+    public function cacheQuery($query, $key, $ttl = 60)
+    {
+        return $this->queryCache->handle($query, $key, $ttl);
     }
 
     public function chunk(): ChunkOptimizer
